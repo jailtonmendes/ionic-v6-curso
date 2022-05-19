@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Datetime</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-datetime locale="pt-BR"></ion-datetime>
+
+  <!--Só leitura-->
+  <ion-datetime readonly></ion-datetime>
+
+  <!--Especificar Dia, Mês, Ano, que sera habilitado no calendário-->
+  <ion-datetime monthValues="6,7,8" yearsValues="2020,2021" dayValues="01,02,03,04,05,06,07,08,09,10"></ion-datetime>
+
+
+  <ion-datetime>
+    <div slot="title">Calendário</div>
+  </ion-datetime>
+
+
+
+</ion-content>
