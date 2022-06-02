@@ -21,8 +21,11 @@ export class AppComponent {
   public menuNativeCollection = [
     { title: 'Camera', url: 'camera', icon: 'home' },
 
-
   ];
+
+  public formulariosDinamicos = [
+    {title: 'Formulário', url: 'formularios', icon: 'clipboard'}
+  ]
 
   constructor() {}
 }

@@ -51,6 +51,10 @@ const routes: Routes = [
     path: 'flash',
     loadChildren: () => import('./pages/natives/flash/flash.module').then( m => m.FlashPageModule)
   },
+  {
+    path: 'formularios',
+    loadChildren: () => import('./pages/formularios/formularios.module').then( m => m.FormulariosPageModule)
+  },
 
 
 ];

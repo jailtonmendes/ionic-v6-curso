@@ -38,6 +38,21 @@
     </ion-list>
   </ion-accordion>
 
+  <ion-accordion value="form" toggle-icon="arrow-down-circle">
+    <ion-item slot="header">
+      <ion-label>Formulários</ion-label>
+    </ion-item>
+
+    <ion-list slot="content">
+      <ion-menu-toggle auto-hide="false" *ngFor="let itemMenu of formulariosDinamicos; let i = index">
+        <ion-item routerDirection="root" [routerLink]="[itemMenu.url]" lines="none" detail="false" routerLinkActive="selected">
+          <ion-icon slot="start" [ios]="itemMenu.icon + '-outline'" [md]="itemMenu.icon + '-sharp'"></ion-icon>
+          <ion-label>{{ itemMenu.title }}</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+    </ion-list>
+  </ion-accordion>
+
 </ion-accordion-group>
 
 
